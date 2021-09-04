@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+/* ## Colors
+
+### Primary
+
+- Pale blue: hsl(225, 100%, 94%)
+- Bright blue: hsl(245, 75%, 52%)
+
+### Neutral
+
+- Very pale blue: hsl(225, 100%, 98%)
+- Desaturated blue: hsl(224, 23%, 55%)
+- Dark blue: hsl(223, 47%, 23%) */
+
+body {
+    background: url(/images/pattern-background-desktop.svg) no-repeat top/cover, hsl(225, 100%, 94%);
+    font-family: 'Red Hat Display', cursive;
+}
+
+.container {
+    position: absolute;
+    width: 31.2%;
+    background: white;
+    height: 77.5vh;
+    top: 50%;
+    left: 50%;
+    border-radius: 20px;
+    transform: translate(-50%, -50%);
+    color: hsl(223, 47%, 23%);
+    text-align: center;
+    max-width: 100%;
+    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.080);
+}
+
+.img {
+    background: url(/images/illustration-hero.svg) no-repeat center/cover;
+    border-radius: 20px 20px 0% 0%;
+    overflow: hidden;
+    width: 100%;
+    height: 31.5%;
+}
+
+.infos {
+    margin: 45px 50px;
+}
+
+.title {
+    font-weight: 900;
+    font-size: 28px;
+}
+
+.summary {
+    padding: 20px;
+    line-height: 1.5;
+    color: hsl(224, 23%, 55%);
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.pricing {
+    position: relative;
+    background: hsl(225, 100%, 98%);
+    height: 11.5vh;
+    border-radius: 20px;
+}
+
+.music {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-left: 12%;
+    background: url(/images/icon-music.svg) no-repeat center;
+    width: 50px;
+    height: 50px;
+}
+
+.annual-plan {
+    position: absolute;
+    top: 27.5%;
+    left: 26%;
+    font-weight: 900;
+}
+
+.current-price {
+    position: absolute;
+    bottom: 27.5%;
+    left: 26%;
+    color: hsl(224, 23%, 55%);
+}
+
+.change {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 7%;
+    color: hsl(245, 75%, 52%);
+    text-decoration: underline;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.payment {
+    background-color: hsl(245, 75%, 52%);
+    margin : 30px 0px;
+    border-radius: 10px;
+    padding: 15px;
+    color: white;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: .5px;
+    box-shadow: 0px 20px 20px 0px hsla(245, 75%, 52%, 0.200);
+}
+
+.cancel {
+    font-weight: 700;
+    font-size: 15px;
+    color: hsl(224, 23%, 55%);
+}
+
+.attribution {
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 10px;
+    font-weight: 500;
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
