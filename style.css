@@ -31,6 +31,7 @@ body {
     text-align: center;
     max-width: 100%;
     box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.080);
+    font-size: 1rem;
 }
 
 .img {
@@ -47,7 +48,7 @@ body {
 
 .title {
     font-weight: 900;
-    font-size: 28px;
+    font-size: 2rem;
 }
 
 .summary {
@@ -55,7 +56,7 @@ body {
     line-height: 1.5;
     color: hsl(224, 23%, 55%);
     font-weight: 500;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .pricing {
@@ -68,11 +69,10 @@ body {
 .music {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
-    padding-left: 12%;
-    background: url(/images/icon-music.svg) no-repeat center;
-    width: 50px;
-    height: 50px;
+    transform: translate(-5%, -50%);
+    background: url(/images/icon-music.svg) center no-repeat;
+    width: 25%;
+    height: 100%;
 }
 
 .annual-plan {
@@ -96,8 +96,14 @@ body {
     right: 7%;
     color: hsl(245, 75%, 52%);
     text-decoration: underline;
-    font-size: 14px;
+    font-size: 0.85rem;
     font-weight: 700;
+}
+
+.change:hover {
+    color: hsl(245, 83%, 68%);
+    cursor: pointer;
+    text-decoration: none;
 }
 
 .payment {
@@ -107,29 +113,129 @@ body {
     padding: 15px;
     color: white;
     font-weight: 700;
-    font-size: 15px;
+    font-size: 0.85rem;
     letter-spacing: .5px;
     box-shadow: 0px 20px 20px 0px hsla(245, 75%, 52%, 0.200);
 }
 
+.payment:hover {
+    background-color: hsl(245, 83%, 68%);
+    cursor: pointer;
+}
+
 .cancel {
-    font-weight: 700;
-    font-size: 15px;
+    font-weight: 900;
+    font-size: 0.85rem;
     color: hsl(224, 23%, 55%);
 }
 
+.cancel:hover {
+    color: hsl(223, 47%, 23%);
+    cursor: pointer;
+}
+
 .attribution {
-    position: absolute;
+    position: fixed;
     text-align: center;
     left: 50%;
+    width: 100%;
     transform: translate(-50%);
-    bottom: 10px;
+    bottom: 0;
     font-weight: 500;
     font-size: 11px;
     text-align: center;
+    background-color: rgba(0, 0, 0, 0.080);
+    padding: 10px;
 }
 
 .attribution a {
     color: hsl(228, 45%, 44%);
 }
 
+@media screen and ( max-width: 1650px ) {
+    .payment {
+        margin : 20px 0px;
+    }
+}
+
+@media screen and ( max-width: 1220px ) {
+
+    .infos {
+        margin: 25px 30px;
+    }
+
+   .container {
+        width: 45%;
+        height: 80vh;
+    }
+}
+
+@media screen and ( max-width: 750px ) {
+    .container {
+        width: 60%;
+        height: 85vh;
+    }
+
+    .payment {
+        margin : 20px 0px;
+    }
+
+    .infos {
+        margin: 25px 30px;
+    }
+
+    .annual-plan {
+        top: 22.5%;
+    }
+    
+    .current-price {
+        bottom: 22.5%;
+    }
+}
+
+@media screen and ( max-width: 550px ) {
+    .container {
+        width: 90%;
+        height: 90vh;
+    }
+
+    .payment {
+        margin : 15px 0px;
+    }
+
+    .infos {
+        margin: 25px 30px;
+    }
+
+    .annual-plan {
+        top: 20%;
+    }
+    
+    .current-price {
+        bottom: 20%;
+    }
+}
+
+@media screen and ( max-width: 350px ) {
+    .container {
+        width: 90%;
+        top: 70%;
+        height: 110vh;
+    }
+
+    .payment {
+        margin : 15px 0px;
+    }
+
+    .infos {
+        margin: 25px 30px;
+    }
+
+    .annual-plan {
+        top: 15%;
+    }
+    
+    .current-price {
+        bottom: 15%;
+    }
+}
