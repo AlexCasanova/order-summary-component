@@ -13,8 +13,22 @@
 - Desaturated blue: hsl(224, 23%, 55%)
 - Dark blue: hsl(223, 47%, 23%) */
 
+:root {
+    --color1: hsl(225, 100%, 94%);
+    --color2: hsl(223, 47%, 23%);
+    --color3: hsl(224, 23%, 55%);
+    --color4: hsl(225, 100%, 98%);
+    --color5: hsl(245, 75%, 52%);
+    --color6: hsl(245, 83%, 68%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    background: url(/images/pattern-background-desktop.svg) no-repeat top/cover, hsl(225, 100%, 94%);
+    background: url(/images/pattern-background-desktop.svg) no-repeat top/cover, var(--color1);
     font-family: 'Red Hat Display', cursive;
 }
 
@@ -27,7 +41,7 @@ body {
     left: 50%;
     border-radius: 20px;
     transform: translate(-50%, -50%);
-    color: hsl(223, 47%, 23%);
+    color: var(--color2);
     text-align: center;
     max-width: 100%;
     box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.080);
@@ -54,14 +68,14 @@ body {
 .summary {
     padding: 20px;
     line-height: 1.5;
-    color: hsl(224, 23%, 55%);
+    color: var(--color3);
     font-weight: 500;
     font-size: 1rem;
 }
 
 .pricing {
     position: relative;
-    background: hsl(225, 100%, 98%);
+    background: var(--color4);
     height: 11.5vh;
     border-radius: 20px;
 }
@@ -86,7 +100,7 @@ body {
     position: absolute;
     bottom: 27.5%;
     left: 26%;
-    color: hsl(224, 23%, 55%);
+    color: var(--color3);
 }
 
 .change {
@@ -94,20 +108,20 @@ body {
     top: 50%;
     transform: translateY(-50%);
     right: 7%;
-    color: hsl(245, 75%, 52%);
+    color: var(--color5);
     text-decoration: underline;
     font-size: 0.85rem;
     font-weight: 700;
 }
 
 .change:hover {
-    color: hsl(245, 83%, 68%);
+    color: var(--color6);
     cursor: pointer;
     text-decoration: none;
 }
 
 .payment {
-    background-color: hsl(245, 75%, 52%);
+    background-color: var(--color5);
     margin : 30px 0px;
     border-radius: 10px;
     padding: 15px;
@@ -119,18 +133,18 @@ body {
 }
 
 .payment:hover {
-    background-color: hsl(245, 83%, 68%);
+    background-color: var(--color6);
     cursor: pointer;
 }
 
 .cancel {
     font-weight: 900;
     font-size: 0.85rem;
-    color: hsl(224, 23%, 55%);
+    color: var(--color3);
 }
 
 .cancel:hover {
-    color: hsl(223, 47%, 23%);
+    color: var(--color2);
     cursor: pointer;
 }
 
